@@ -1,0 +1,126 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: abel;
+    line-height: 1.6;
+    color: black;
+    background-image: url(https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_c756a0c0-4895-4275-845b-7a20f085e432.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    text-shadow: 0px 2px 30px rgb(255, 255, 255);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: skyblue;
+    text-shadow: 0 2px 20px slateblue;
+}
+
+
+section {
+    padding: 1rem;
+    margin: 2% 5% ;
+    max-width: 90%;
+    background-color: silver;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px slateblue;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.service {
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    
+    color: rgb(0, 0, 0);
+}
+.icon a{
+    color: rgb(0, 0, 0);
+    /* margin: 15px; */
+    padding: -13px;
+    font-size: 20px;
+    
+}
+
+.social a{
+    margin: 8%;
+}
+
+.social a:hover{
+    color: rgb(58, 130, 189);
+    box-shadow: 0 2px 20px slateblue;
+    border-radius: 20px;
+
+}
+
+.icon a:hover{
+    color: rgb(58, 130, 189);
+    box-shadow: 0 2px 20px slateblue;
+    border-radius: 20px;
+}
+
+.icon p:hover{
+    color: rgb(58, 130, 189);
+    box-shadow: 0 2px 20px slateblue;
+    border-radius: 20px;
+
+}
+
+
+.icon p {
+    font-size: 20px;
+    margin: 6px;
+    padding: -18px;
+}
+footer {
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;  
+    bottom: 0;
+    width: 100%;
+}
