@@ -65,6 +65,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 20px slateblue;
     align-items: center;
+    z-index: 1;
 }
 
 h2 {
@@ -130,5 +131,9 @@ footer {
     width: 20%;
     border-radius: 40%;
     filter: drop-shadow( 1px 1px 15px silver );
-    margin: 0 0 0  40%
+    margin: 0 0 0  40%;
+    z-index: -1;
+    position: sticky;
+    top: 0;
+
 }
