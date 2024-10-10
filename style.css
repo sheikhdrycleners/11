@@ -1,139 +1,204 @@
-/* Reset some default browser styles */
-body,
-h1,
-h2,
-h3,
-p {
+body {
+    font-family: 'Abel', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-/* Basic styles */
-body {
-    font-family: abel;
-    line-height: 1.6;
-    color: black;
-    background-image: url(https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_c756a0c0-4895-4275-845b-7a20f085e432.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: capitalize;
+    background-color: #f3f4f6;
+    animation: changeColor 5s infinite alternate; /* Animation */
 }
 
 header {
-    background: #000000;
-    color: #fff;
+    background: #1976D2;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    width: 100%;
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
-    text-shadow: 0px 2px 30px rgb(255, 255, 255);
+header h1{
+    font-family: 'Georgia', serif; /* Font style */
+            font-size: 1.5em; /* Larger text size */
+            font-weight: bold; /* Bold text */
+            color: #2C3E50; /* Dark color */
+            text-align: center; /* Center align */
+            text-transform: uppercase; /* Capitalize all letters */
+            letter-spacing: 2px; /* Space between letters */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Text shadow */
 }
 
 nav ul {
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover{
-    color: skyblue;
-    text-shadow: 0 2px 20px slateblue;
+nav a:hover {
+    background-color: darkblue;
+    color:#f3f4f6 ;
+    padding: 10px;
+    border-radius: 25px;
+    transform: scale(1.5);
+    transition: transform 0.3s;
 }
-
 
 section {
-    padding: 1rem;
-    margin: 2% 5% ;
-    max-width: 90%;
-    background-color: silver;
-    border-radius: 5px;
-    box-shadow: 0 2px 20px slateblue;
+    padding: 40px 20px;
+    margin: 80px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#home h2 {
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+    transition: all 0.3s ease; /* Smooth transition */
+    text-shadow: 0px 4px 15px rgba(87, 71, 71, 0.2); /* Initial shadow */
+}
+
+/* Hover effect */
+#home h2:hover {
+    color: #007BFF; /* Change text color */
+    transform: scale(1.1); /* Scale up */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    animation: bounce 0.5s ease-in-out; /* Bouncing effect on hover */
+}
+
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    z-index: 1;
-}
-
-h2 {
-    margin-bottom: 1rem;
-}
-
-.service {
-    margin-bottom: 1.5rem;
-}
-
-.icon {
-    
-    color: rgb(0, 0, 0);
-}
-.icon a{
-    color: rgb(0, 0, 0);
-    /* margin: 15px; */
-    padding: -13px;
-    font-size: 18px;
-    
-}
-
-.social a{
-    margin: 8%;
-}
-
-.social a:hover{
-    color: rgb(58, 130, 189);
-    box-shadow: 0 2px 20px slateblue;
-    border-radius: 20px;
-
-}
-
-.icon a:hover{
-    color: rgb(58, 130, 189);
-    box-shadow: 0 2px 20px slateblue;
-    border-radius: 20px;
-}
-
-.icon p:hover{
-    color: rgb(58, 130, 189);
-    box-shadow: 0 2px 20px slateblue;
-    border-radius: 20px;
-
-}
-
-
-.icon p {
-    font-size: 20px;
-    margin: 6px;
-    padding: -18px;
-}
-footer {
-    background: rgb(0, 0, 0);
-    color: #ffffff;
-    text-align: center;  
-    bottom: 0;
     width: 100%;
 }
 
- img{
-    height: 50%;
-    width: 40%;
-    border-radius: 40%;
-    filter: drop-shadow( 1px 1px 15px silver );
-    margin: 0 0 0  29%;
-    z-index: -1;
-    position: sticky;
-    top: 0;
+.logo-container img{
+    width: 40%; /* Default width for desktop */
+    max-width: 300px; /* Limit the maximum width */
+    border-radius: 50%;
+    margin-right: 0; /* Center image by removing margin-right */
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2); /* Optional shadow for logo */
+}
 
+/* Responsive layout for mobile */
+@media (max-width: 768px) {     
+    .logo-container img{
+        width: 60%; /* Adjust width for mobile */
+        border-radius:      50%;
+        max-width: 200px; /* Smaller max width for mobile */
+    }
+}
+
+
+
+h2 {
+    color: #1976D2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service {
+    border: 1px solid #1976D2;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.icon a {
+    display: block;
+    margin: 5px 0;
+    color: #1976D2;
+    text-decoration: none;
+}
+
+.icon a:hover {
+    color: #FF9800;
+}
+
+
+.social {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social a {
+    color: #1976D2;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social a:hover {
+    color: #FF9800;
+}
+
+footer {
+    background: #1976D2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #3498db; 
+    }
+    100% {
+        background-color: #d5d8c6; 
+    }
 }
